@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle at center, #141c36 0%, #070913 70%, #020307 100%);
+    background-attachment: fixed;
+    color: #e0e6ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(180deg, #fff2a3 0%, #ffd700 60%, #b8860b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 12px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: rgba(15, 20, 38, 0.85);
+}
+
+
+.lore-container {
+    max-width: 800px; 
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lore-container h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffd700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    padding-bottom: 15px;
+}
+
+.lore-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #cbd5e1;
+}
+
+.citacao-box {
+    margin: 25px 0;
+    padding: 20px 30px;
+    border-left: 5px solid #ffd700;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 0 10px 10px 0;
+}
+
+.citacao-box h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #fff2a3;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+.ataques-box {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(10, 15, 30, 0.8);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.ataques-box h4 {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.ataques-box p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #e0e6ed;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.03);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 30px; 
+    padding: 12px 28px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-decoration: none;
+    border: 2px solid #ffd700;
+    border-radius: 25px;
+    background: rgba(10, 15, 30, 0.7);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    img {
+        max-height: 380px;
+    }
+    .lore-container p {
+        text-align: left; /* Justificado em telas muito pequenas pode criar buracos estranhos no texto */
+    }
+}
