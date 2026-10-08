@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Montserrat:wght@300;400;600&display=swap');
 
+:root {
+    --gold-light: #fff2a3;
+    --gold-main: #ffd700;
+    --gold-dark: #b8860b;
+    --gold-shadow: rgba(255, 215, 0, 0.35);
+    --bg-dark: #070913;
+    --card-bg: rgba(16, 22, 42, 0.85);
+    --card-border: rgba(255, 215, 0, 0.3);
+    --text-color: #e0e6ed;
+}
 
 * {
     margin: 0;
@@ -8,8 +18,10 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;   
-    color: #e0e6ed;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle at center, #11182e 0%, #070913 70%, #020307 100%);
+    background-attachment: fixed;
+    color: var(--text-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,8 +41,14 @@ header h1 {
     font-family: 'Cinzel', serif;
     font-size: 2.6rem;
     font-weight: 900;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
+    background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold-main) 50%, var(--gold-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px var(--gold-shadow);
+    position: relative;
+    padding-bottom: 10px;
 }
 
 
@@ -43,6 +61,8 @@ header h1 {
     margin-bottom: 40px;
     padding: 10px 0;
     background: rgba(7, 9, 19, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--card-border);
     border-radius: 0 0 12px 12px;
 }
 
@@ -56,8 +76,8 @@ header h1 {
 }
 
 .barra li {
-    background: rgba(16, 22, 42, 0.85);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
     border-radius: 8px;
     backdrop-filter: blur(8px);
     transition: all 0.3s ease;
@@ -69,7 +89,7 @@ header h1 {
 .barra li a {
     display: block;
     padding: 8px 14px;
-    color: #e0e6ed;
+    color: var(--text-color);
     text-decoration: none;
     font-family: 'Cinzel', serif;
     font-size: 0.85rem;
@@ -79,6 +99,12 @@ header h1 {
     white-space: nowrap;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+.barra li a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 215, 0, 0.15);
+}
+
 
 .conteudo-principal {
     width: 100%;
@@ -98,6 +124,7 @@ section {
     scroll-margin-top: 80px; 
 }
 
+
 section h1, section h2 {
     font-family: 'Cinzel', serif;
     font-size: 2.2rem;
@@ -106,11 +133,12 @@ section h1, section h2 {
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-align: center;
-    background: linear-gradient(180deg, #fff2a3 0%, #ffd700 60%, #b8860b 100%);
+    background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold-main) 60%, var(--gold-dark) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 25px rgba(255, 215, 0, 0.35);
+    text-shadow: 0 0 25px var(--gold-shadow);
 }
+
 
 img {
     display: block;
@@ -119,11 +147,13 @@ img {
     height: auto;
     max-height: 450px;
     border-radius: 12px;
-    border: 3px solid #ffd700;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.35), 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 3px solid var(--gold-main);
+    box-shadow: 0 0 30px var(--gold-shadow), 0 10px 30px rgba(0, 0, 0, 0.6);
     object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     background-color: rgba(15, 20, 38, 0.85);
 }
+
 
 .lore-container {
     max-width: 800px;
@@ -138,12 +168,12 @@ img {
 .lore-container h2 {
     font-family: 'Cinzel', serif;
     font-size: 1.8rem;
-    color: #ffd700;
+    color: var(--gold-main);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    border-bottom: 1px solid var(--card-border);
     padding-bottom: 15px;
     background: none;
     -webkit-text-fill-color: initial;
@@ -157,10 +187,11 @@ img {
     color: #cbd5e1;
 }
 
+
 .citacao-box {
     margin: 25px 0;
     padding: 20px 30px;
-    border-left: 5px solid #ffd700;
+    border-left: 5px solid var(--gold-main);
     background: rgba(255, 215, 0, 0.05);
     border-radius: 0 10px 10px 0;
     text-align: left;
@@ -170,7 +201,7 @@ img {
     font-family: 'Cinzel', serif;
     font-size: 1.3rem;
     font-style: italic;
-    color: #fff2a3;
+    color: var(--gold-light);
     font-weight: 600;
     line-height: 1.6;
 }
@@ -180,14 +211,14 @@ img {
     margin-top: 20px;
     padding: 30px;
     background: rgba(10, 15, 30, 0.8);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid var(--card-border);
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .ataques-box h4 {
     font-family: 'Cinzel', serif;
-    color: #ffd700;
+    color: var(--gold-main);
     font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
@@ -199,13 +230,30 @@ img {
     text-align: center;
     font-weight: 600;
     font-size: 1.15rem;
-    color: #e0e6ed;
+    color: var(--text-color);
     margin-bottom: 12px;
     padding: 10px;
     background: rgba(255, 215, 0, 0.03);
     border-radius: 8px;
     transition: all 0.3s ease;
 }
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 28px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-main);
+    text-decoration: none;
+    border: 2px solid var(--gold-main);
+    border-radius: 25px;
+    background: rgba(10, 15, 30, 0.7);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 footer {
     margin-top: 60px;
