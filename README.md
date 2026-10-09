@@ -42,14 +42,14 @@ O projeto foi dividido em duas fases:
 ## 🎨 Protótipo (Figma ou Similar)
 
 Link para o protótipo criado no Figma:  
-[🔗 Ver protótipo](https://www.canva.com/design/DAHVpP66vxA/UFE2XdY32w2XTBMkMFcy7w/edit)
+[🔗 Ver) https://canva.link/ia66galg6o5y4ef
 
 ---
 
 ## 🔗 Acesso ao Projeto
 
-- **GitHub Pages:** [Clique aqui para acessar o site](https://seuusuario.github.io/nome-do-repositorio/)
-- **Repositório GitHub:** [Acesse o código-fonte aqui](https://github.com/seuusuario/nome-do-repositorio)
+- **GitHub Pages:** [Clique aqui para acessar o site](https://CaioKarius.github.io/Trabalho-TechWeb-P1-v0.01/)
+- **Repositório GitHub:** [Acesse o código-fonte aqui](https://github.com/CaioKarius/Trabalho-TechWeb-P1-v0.01)
 
 ---
 
