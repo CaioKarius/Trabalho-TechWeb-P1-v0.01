@@ -42,8 +42,7 @@ O projeto foi dividido em duas fases:
 ## 🎨 Protótipo (Figma ou Similar)
 
 Link para o protótipo criado no Figma:  
-[🔗 Ver) https://canva.link/ia66galg6o5y4ef
-
+[🔗 Ver protótipo](https://canva.link/ia66galg6o5y4ef)
 ---
 
 ## 🔗 Acesso ao Projeto
