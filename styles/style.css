@@ -373,9 +373,6 @@ header h1 {
 .raridade-epica { border-color: var(--crimson-accent); }
 .raridade-epica .badge-raridade { background: var(--crimson-accent); color: #fff; }
 
-.raridade-rara { border-color: #3b82f6; }
-.raridade-rara .badge-raridade { background: #3b82f6; color: #fff; }
-
 
 .card-item:hover {
     transform: translateY(-6px) scale(1.02);
