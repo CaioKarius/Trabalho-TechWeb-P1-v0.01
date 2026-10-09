@@ -54,7 +54,7 @@ Link para o protótipo criado no Figma:
 
 ## 📸 Capturas de Tela
 
-> (Adicione aqui imagens do seu projeto rodando – Print da versão desktop e mobile)
+(https://canva.link/suzk4rflm65wz03)
 
 ---
 
